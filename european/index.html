@@ -39,7 +39,7 @@
     <nav class="mt-[-25px]">
         <ul class="sidebar fixed hidden top-0 right-0 h-screen w-[250px] z-[999]
          bg-white shadow-[-10px_0_10px_rgba(0,0,0,0.1)]">
-         
+
          <!-- icon links -->
             <li onclick=hideSidebar() class="h-[50px]">
                 <a class="h-full py-0 px-[30px] flex no-underline items-center hover:bg-slate-200">
@@ -70,23 +70,50 @@
             </li>
         </ul>
     </nav>
-    <section class="landing flex items-start pt-[120px] pl-[200px] h-screen w-screen" style="background-image: url('/src/images/landpic.jpg')">
+    <section class="rounded-s flex items-start pt-[120px] pl-[200px] h-screen w-screen" style="background-image: url('/src/images/landpic.jpg')">
         <div class="landingText relative text-center">
             <h1 class="text-3xl">european luxury</h1>
             <p>made for you</p>
             <button class="mt-12 w-[130px] p-[6px] border-solid border-2 rounded-md border-black ">Shop Now</button>
         </div>
     </section>
+
+    <!-- Trending Items -->
     <section>
-        <h1>Trending This Week</h1>
-        <div class="flex">
-            <div>
+        <div class="flex flex-wrap lg:flex-nowrap justify-between p-8 gap-4">
+            <div class="w-full lg:w-[45rem] h-[25rem] bg-green-900 rounded-md">
                 <!-- Image of item here -->
             </div>
-            <div>
+            <div class="w-full lg:w-[25rem] h-[25rem] bg-orange-100 rounded-md">
                 <!-- Image of item here -->
             </div>
         </div>
+        <h1 class="font-bold p-4 text-2xl">Trending This Week</h1>
+        
+        <div class="flex flex-col justify-between p-8 gap-4  lg:flex-row">
+            <!-- Right Column larger image -->
+            <div class="w-full h-[40rem] bg-orange-100 rounded-md mb-4 lg:w-[35rem]">
+                <!-- Image of item here -->
+            </div>
+            <!-- Left Column with 2x2 smaller image -->
+            <div class="grid grid-cols-2 gap-4 lg:w-[30rem] lg:mr-8">
+                <div class="h-[19rem] lg:w-[15rem] bg-orange-100 rounded-md">
+                    <!-- Image of item here -->
+                </div>
+                <div class="h-[19rem] lg:w-[15rem] bg-orange-100 rounded-md">
+                    <!-- Image of item here -->
+                </div>
+                <div class="h-[20rem] lg:w-[15rem] bg-orange-100 rounded-md">
+                    <!-- Image of item here -->
+                </div>
+                <div class="h-[20rem] lg:w-[15rem] bg-orange-100 rounded-md">
+                    <!-- Image of item here -->
+                </div>
+            </div>
+        
+
+        </div>
+        
     </section>    
     <script src="./main/main.js"></script>
 </body>
